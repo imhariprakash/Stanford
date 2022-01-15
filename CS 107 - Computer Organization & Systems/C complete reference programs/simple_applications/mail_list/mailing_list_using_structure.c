@@ -33,6 +33,8 @@ int get_choice(void)
     scanf("%d",&choice);
     getchar();   //since we are using fgets also so new line char must be captured.
     }while(choice>4 || choice <1);
+    
+    return(choice);  //without returning also returns choice since its the only variable used here.
 }
 
 int free_slot(void)
